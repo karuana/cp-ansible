@@ -1,0 +1,4 @@
+- src: geerlingguy.composer
+- src: geerlingguy.redis
+- src: geerlingguy.nginx
+- src: geerlingguy.mysql

@@ -1,0 +1,9 @@
+---
+ - name: install webtatic repo
+   yum:
+     name: "https://mirror.webtatic.com/yum/el6/latest.rpm"
+     state: present
+   tags:
+     - webtatic
+
+

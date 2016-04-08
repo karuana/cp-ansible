@@ -1,0 +1,9 @@
+---
+- name: install mysql 5.7 repo
+  yum:
+    name: "http://dev.mysql.com/get/mysql57-community-release-el6-7.noarch.rpm"
+    state: present
+  tags:
+    - mysql
+
+

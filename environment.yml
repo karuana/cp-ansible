@@ -1,0 +1,21 @@
+---
+- name:
+  hosts: 127.0.0.1
+  connection: local
+  vars_files:
+    - defaults/main.yml
+  # remote_user: user
+  # sudo: yes
+
+
+
+  roles:
+   - role: epel
+   - role: common
+   - role: php-fpm
+   - role: mysql
+   - geerlingguy.composer
+   - geerlingguy.redis
+   - geerlingguy.nginx
+   - role: geerlingguy.mysql
+     become: yes
